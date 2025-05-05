@@ -1,10 +1,12 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
+    var userName = "Boss"; // Example of inline C# variable
+    var today = DateTime.Now.ToString("dddd, MMMM dd, yyyy");
 }
 
 <div class="container py-5 text-center">
-    <h1 class="display-4 text-primary fw-bold">Welcome</h1>
-    <p class="lead">Welcome to your new app.</p>
+    <h1 class="display-4 text-primary fw-bold">Welcome, @userName!</h1>
+    <p class="lead">Today is <strong>@today</strong></p>
 
     <hr class="my-4" />
 
@@ -15,7 +17,7 @@
         </a>.
     </p>
 
-    <a class="btn btn-primary btn-lg" href="https://learn.microsoft.com/aspnet/core" role="button">
+    <a class="btn btn-primary btn-lg mb-4" href="https://learn.microsoft.com/aspnet/core" role="button">
         Get Started
     </a>
 
